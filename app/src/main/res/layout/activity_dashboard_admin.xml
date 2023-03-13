@@ -7,6 +7,7 @@
     tools:context=".DashboardAdminActivity"
     android:background="@drawable/back01"
     >
+    <!--toolbars-->
     <RelativeLayout
         android:id="@+id/toolbarRl"
         android:layout_width="match_parent"
@@ -45,6 +46,34 @@
             />
 
     </RelativeLayout>
+    <!--    Search-->
+    <EditText
+        android:id="@+id/searchCategory"
+        android:layout_below="@id/toolbarRl"
+        android:hint="Search"
+        android:textColorHint="@color/gray01"
+        android:drawableStart="@drawable/ic_search_gray"
+        android:drawablePadding="12dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+         />
+
+    <!--    list -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchCategory"
+        tools:listitem="@layout/row_category"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_above="@id/bottomDash"/>
     <LinearLayout
         android:id="@+id/bottomDash"
         android:layout_width="match_parent"

@@ -301,7 +301,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/C:/Users/Phong%20Vu/AppData/Local/Android/Sdk/icons/material/materialicons/category/baseline_category_24.xml" />
+                                      <entry key="url" value="file:/C:/Users/Phong%20Vu/AppData/Local/Android/Sdk/icons/material/materialicons/settings/baseline_settings_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -311,8 +311,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="cccccc" />
-                            <entry key="outputName" value="baseline_category_24" />
+                            <entry key="outputName" value="ic_setting_black" />
                             <entry key="sourceFile" value="D:\Workspace\Java\OOP_Project" />
                           </map>
                         </option>

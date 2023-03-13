@@ -1,13 +1,19 @@
 package com.example.oop_project;
 
 public class Category {
-    private String title, uid;
-    private long id, timestamp;
+    private String title, uid, id;
+    private long timestamp;
     public Category(){
         this.uid = "";
         this.title = "";
-        this.id = 0;
+        this.id = "";
         this.timestamp = 0;
+    }
+    public Category(String id, String title, String uid, long timestamp){
+        this.id = id;
+        this.title = title;
+        this.uid = uid;
+        this.timestamp = timestamp;
     }
     public String getUid() {
         return uid;
@@ -34,11 +40,12 @@ public class Category {
         this.title = title;
     }
 
-    public long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(String id) {
         this.id = id;
     }
+
 }

@@ -107,7 +107,7 @@ public class LoginActivity extends AppCompatActivity {
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         // get User type
                         String userType = ""+snapshot.child("accountType").getValue();
-
+                        Log.i("test", userType);
                         if(userType.equals("user")){
                             startActivity(new Intent(LoginActivity.this, DashboardUserActivity.class));
                             finish();

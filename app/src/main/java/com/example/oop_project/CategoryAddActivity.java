@@ -68,7 +68,7 @@ public class CategoryAddActivity extends AppCompatActivity {
 
         long timestamp = System.currentTimeMillis();
         category.setTimestamp(timestamp);
-        category.setId(+timestamp);
+        category.setId(""+timestamp);
         category.setUid(firebaseAuth.getUid());
 
         DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Categories");
@@ -79,7 +79,7 @@ public class CategoryAddActivity extends AppCompatActivity {
                     public void onSuccess(Void unused) {
                         progressDialog.dismiss();
                         Toast.makeText(CategoryAddActivity.this, "Category added success!", Toast.LENGTH_SHORT).show();
-
+                        binding.category.setText("");
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {

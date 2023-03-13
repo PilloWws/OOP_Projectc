@@ -11,8 +11,9 @@ public class Person {
         this.profileImage = "";
         this.uid = "";
     }
-    public Person(String email, String password, long timestamp, String profileImage, String uid) {
+    public Person(String accountType,String email, String password, long timestamp, String profileImage, String uid) {
         this.timestamp = timestamp;
+        this.accountType = accountType;
         this.profileImage = profileImage;
         this.password = password;
         this.email = email;
